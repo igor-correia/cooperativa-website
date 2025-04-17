@@ -395,13 +395,12 @@ export default function ParceriasPage() {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Caso 1 */}
           <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="md:col-span-1">
                 <div className="relative h-full w-full min-h-[150px]">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/images/alpha.jpeg?height=300&width=300"
                     alt="Logo Parceiro"
                     fill
                     className="object-contain p-4"
@@ -428,13 +427,12 @@ export default function ParceriasPage() {
             </div>
           </Card>
 
-          {/* Caso 2 */}
           <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="md:col-span-1">
                 <div className="relative h-full w-full min-h-[150px]">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/images/beta.png?height=300&width=300"
                     alt="Logo Parceiro"
                     fill
                     className="object-contain p-4"
@@ -461,13 +459,12 @@ export default function ParceriasPage() {
             </div>
           </Card>
 
-          {/* Caso 3 */}
           <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="md:col-span-1">
                 <div className="relative h-full w-full min-h-[150px]">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/images/coop.jpeg?height=300&width=300"
                     alt="Logo Parceiro"
                     fill
                     className="object-contain p-4"
@@ -494,13 +491,12 @@ export default function ParceriasPage() {
             </div>
           </Card>
 
-          {/* Caso 4 */}
           <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="md:col-span-1">
                 <div className="relative h-full w-full min-h-[150px]">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/images/delta.jpeg?height=300&width=300"
                     alt="Logo Parceiro"
                     fill
                     className="object-contain p-4"
@@ -529,7 +525,6 @@ export default function ParceriasPage() {
         </div>
       </section>
 
-      {/* Depoimentos */}
       <section className="bg-gray-50 dark:bg-gray-800 py-16 mb-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
@@ -537,7 +532,6 @@ export default function ParceriasPage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Depoimento 1 */}
             <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
