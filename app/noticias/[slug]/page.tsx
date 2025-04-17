@@ -23,7 +23,7 @@ import {
 import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 
-// Importar os mesmos dados simulados de notícias
+
 const noticias = [
   {
     id: 1,
@@ -58,7 +58,7 @@ const noticias = [
     imagem: "/placeholder.svg?height=400&width=600",
     categoria: "Parcerias",
     autor: "Equipe de Comunicação",
-    data: new Date(2025, 3, 15), // 15 de Abril de 2025
+    data: new Date(2025, 3, 15), 
     destaque: true,
     tags: ["parceria", "tecnologia", "inovação", "desenvolvimento"],
   },
@@ -457,7 +457,7 @@ const noticias = [
   },
 ]
 
-// Função para obter notícias relacionadas
+
 const getNoticiasRelacionadas = (noticia) => {
   return noticias
     .filter(
@@ -467,12 +467,11 @@ const getNoticiasRelacionadas = (noticia) => {
     .slice(0, 3)
 }
 
-// Função para encontrar uma notícia pelo slug
+
 const getNoticiaPorSlug = (slug) => {
   return noticias.find((noticia) => noticia.slug === slug)
 }
 
-// Componente de página de detalhes da notícia
 export default function NoticiaDetalhePage({ params }: { params: { slug: string } }) {
   const [comentario, setComentario] = useState("")
   const [comentarios, setComentarios] = useState([
