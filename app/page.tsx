@@ -267,16 +267,15 @@ export default function Home() {
                   condições especiais de financiamento para máquinas agrícolas e
                   infraestrutura de irrigação...
                 </p>
-              </CardContent>
-              <CardFooter>
-                <Link
-                  href="/noticias/nova-linha-credito"
-                  className="text-green-600 dark:text-green-400 hover:underline inline-flex items-center"
+                <Button 
+                  variant="outline"
+                  className="w-full mt-4 border-green-600 text-green-600 hover:bg-green-50 dark:border-green-400 dark:text-green-400 dark:hover:bg-green-900/20"
+                  aria-label="Botão desativado"
+                  disabled={false}
                 >
                   Ler mais
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </CardFooter>
+                </Button>
+              </CardContent>
             </Card>
 
             {/* Notícia 2 */}
@@ -303,16 +302,15 @@ export default function Home() {
                   apresentará as mais recentes técnicas de manejo integrado de
                   pragas para culturas diversas...
                 </p>
-              </CardContent>
-              <CardFooter>
-                <Link
-                  href="/noticias/dia-campo-mip"
-                  className="text-green-600 dark:text-green-400 hover:underline inline-flex items-center"
+                <Button 
+                  variant="outline"
+                  className="w-full mt-4 border-green-600 text-green-600 hover:bg-green-50 dark:border-green-400 dark:text-green-400 dark:hover:bg-green-900/20"
+                  aria-label="Botão desativado"
+                  disabled={false}
                 >
                   Ler mais
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </CardFooter>
+                </Button>
+              </CardContent>
             </Card>
 
             <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
@@ -338,16 +336,15 @@ export default function Home() {
                   para prestação de contas, planejamento da próxima safra e
                   eleição dos novos membros do conselho...
                 </p>
-              </CardContent>
-              <CardFooter>
-                <Link
-                  href="/noticias/assembleia-anual"
-                  className="text-green-600 dark:text-green-400 hover:underline inline-flex items-center"
+                <Button 
+                  variant="outline"
+                  className="w-full mt-4 border-green-600 text-green-600 hover:bg-green-50 dark:border-green-400 dark:text-green-400 dark:hover:bg-green-900/20"
+                  aria-label="Botão desativado"
+                  disabled={false}
                 >
                   Ler mais
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </CardFooter>
+                </Button>
+              </CardContent>
             </Card>
           </div>
           <div className="text-center mt-12">

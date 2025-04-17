@@ -44,7 +44,7 @@ const noticias = [
       
       <p>Fique atento às nossas comunicações e não perca a oportunidade de ser um dos primeiros a se beneficiar desta importante iniciativa.</p>
     `,
-    imagem: "/placeholder.svg?height=400&width=600",
+    imagem: "images/noticias/image1.jpeg?height=400&width=600",
     categoria: "Parcerias",
     autor: "Equipe de Comunicação",
     data: new Date(2025, 3, 15), // 15 de Abril de 2025
@@ -86,7 +86,7 @@ const noticias = [
       
       <p>Não perca esta oportunidade de investir em seu desenvolvimento profissional e fortalecer ainda mais nossa cooperativa através da qualificação contínua.</p>
     `,
-    imagem: "/placeholder.svg?height=400&width=600",
+    imagem: "images/noticias/image4.jpg?height=400&width=600",
     categoria: "Educação",
     autor: "Departamento de Educação Cooperativa",
     data: new Date(2025, 3, 10), // 10 de Abril de 2025
@@ -134,7 +134,7 @@ const noticias = [
       
       <p>Contamos com a participação de todos para este importante momento de decisões coletivas que definirão os rumos da nossa cooperativa para o próximo período.</p>
     `,
-    imagem: "/placeholder.svg?height=400&width=600",
+    imagem: "images/noticias/image2.jpg?height=400&width=600",
     categoria: "Institucional",
     autor: "Conselho Administrativo",
     data: new Date(2025, 3, 5), // 5 de Abril de 2025
@@ -186,7 +186,7 @@ const noticias = [
       
       <p>O relatório financeiro completo está disponível para consulta na Área do Cooperado em nosso site.</p>
     `,
-    imagem: "/placeholder.svg?height=400&width=600",
+    imagem: "images/noticias/image5.jpg?height=400&width=600",
     categoria: "Financeiro",
     autor: "Departamento Financeiro",
     data: new Date(2025, 3, 2), // 2 de Abril de 2025
@@ -236,7 +236,7 @@ const noticias = [
       
       <p>Agradecemos a todos os cooperados e colaboradores que contribuíram para o sucesso deste projeto e reafirmamos nosso compromisso com um modelo de negócio que equilibra resultados econômicos, responsabilidade social e preservação ambiental.</p>
     `,
-    imagem: "/placeholder.svg?height=400&width=600",
+    imagem: "images/noticias/image3.jpeg?height=400&width=600",
     categoria: "Sustentabilidade",
     autor: "Comitê de Sustentabilidade",
     data: new Date(2025, 2, 25), // 25 de Março de 2025
@@ -281,7 +281,7 @@ const noticias = [
       
       <p>Convidamos todos os cooperados da região a conhecerem as novas instalações e a utilizarem os serviços disponíveis. Para marcar visitas ou obter mais informações, entre em contato pelo telefone (11) 1234-5678 ou pelo e-mail unidade.ribeiraoverde@cooperativa.com.br.</p>
     `,
-    imagem: "/placeholder.svg?height=400&width=600",
+    imagem: "images/noticias/image6.webp?height=400&width=600",
     categoria: "Institucional",
     autor: "Departamento de Comunicação",
     data: new Date(2025, 2, 20), // 20 de Março de 2025
@@ -335,7 +335,7 @@ const noticias = [
       
       <p>Investir em uma gestão financeira eficiente não é apenas uma forma de evitar problemas, mas também uma estratégia para identificar oportunidades de crescimento e garantir a sustentabilidade do seu negócio a longo prazo.</p>
     `,
-    imagem: "/placeholder.svg?height=400&width=600",
+    imagem: "images/noticias/image7.jpg?height=400&width=600",
     categoria: "Dicas",
     autor: "Departamento Financeiro",
     data: new Date(2025, 2, 15), // 15 de Março de 2025
@@ -437,12 +437,60 @@ const noticias = [
       
       <p>Convidamos todos os cooperados a participarem ativamente desta jornada, compartilhando suas experiências, sugestões e necessidades para que possamos continuar evoluindo juntos.</p>
     `,
-    imagem: "/placeholder.svg?height=400&width=600",
+    imagem: "images/noticias/image8.webp?height=400&width=600",
     categoria: "Tecnologia",
     autor: "Comitê de Inovação Digital",
     data: new Date(2025, 2, 10), // 10 de Março de 2025
     destaque: false,
     tags: ["transformação digital", "tecnologia", "inovação", "eficiência"],
+  },
+  {
+    id: 9,
+    slug: "nova-linha-credito-rural",
+    titulo: "Nova Linha de Crédito Rural Disponível",
+    resumo:
+      "A Aliança Verde firmou parceria com bancos para oferecer condições especiais de financiamento para máquinas agrícolas e infraestrutura de irrigação...",
+    conteudo: `
+      <p>A Aliança Verde firmou parceria com bancos para oferecer condições especiais de financiamento para máquinas agrícolas e infraestrutura de irrigação, beneficiando produtores rurais associados.</p>
+    `,
+    imagem: "images/noticias/image1.jpeg?height=400&width=600",
+    categoria: "Financeiro",
+    autor: "Departamento Financeiro",
+    data: new Date(2025, 3, 15), // 15 de Abril de 2025
+    destaque: true,
+    tags: ["crédito", "financiamento", "máquinas agrícolas", "irrigação"],
+  },
+  {
+    id: 10,
+    slug: "dia-campo-manejo-pragas",
+    titulo: "Dia de Campo sobre Manejo Integrado de Pragas",
+    resumo:
+      "Estão abertas as inscrições para o Dia de Campo que apresentará as mais recentes técnicas de manejo integrado de pragas para culturas diversas...",
+    conteudo: `
+      <p>Estão abertas as inscrições para o Dia de Campo que apresentará as mais recentes técnicas de manejo integrado de pragas para culturas diversas, com demonstrações práticas e participação de especialistas renomados.</p>
+    `,
+    imagem: "images/noticias/image4.jpg?height=400&width=600",
+    categoria: "Educação",
+    autor: "Departamento Técnico",
+    data: new Date(2025, 3, 10), // 10 de Abril de 2025
+    destaque: false,
+    tags: ["manejo de pragas", "capacitação", "dia de campo", "agricultura sustentável"],
+  },
+  {
+    id: 11,
+    slug: "assembleia-geral-ordinaria",
+    titulo: "Assembleia Geral Ordinária",
+    resumo:
+      "A Assembleia Geral Ordinária será realizada no próximo mês para prestação de contas, planejamento da próxima safra e eleição dos novos membros do conselho...",
+    conteudo: `
+      <p>A Assembleia Geral Ordinária será realizada no próximo mês para prestação de contas, planejamento da próxima safra e eleição dos novos membros do conselho fiscal, com participação aberta a todos os cooperados.</p>
+    `,
+    imagem: "images/noticias/image2.jpg?height=400&width=600",
+    categoria: "Institucional",
+    autor: "Conselho Administrativo",
+    data: new Date(2025, 3, 5), // 5 de Abril de 2025
+    destaque: true,
+    tags: ["assembleia", "governança", "prestação de contas", "eleição"],
   },
 ]
 
@@ -524,8 +572,12 @@ export default function NoticiasPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">{noticia.titulo}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">{noticia.resumo}</p>
-                <Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white">
-                  <Link href={`/noticias/${noticia.slug}`}>Ler mais</Link>
+                <Button 
+                  className="w-full bg-green-600 hover:bg-green-700 text-white"
+                  aria-label="Botão desativado"
+                  disabled={false}
+                >
+                  Ler mais
                 </Button>
               </CardContent>
             </Card>
@@ -614,11 +666,12 @@ export default function NoticiasPage() {
                       ))}
                     </div>
                     <Button
-                      asChild
                       variant="outline"
                       className="w-full border-green-600 text-green-600 hover:bg-green-50 dark:border-green-400 dark:text-green-400 dark:hover:bg-green-900/20"
+                      aria-label="Botão desativado"
+                      disabled={false}
                     >
-                      <Link href={`/noticias/${noticia.slug}`}>Ler mais</Link>
+                      Ler mais
                     </Button>
                   </CardContent>
                 </Card>
@@ -713,13 +766,11 @@ export default function NoticiasPage() {
                             <CalendarIcon className="h-3 w-3 mr-1" />
                             {format(noticia.data, "dd/MM/yyyy")}
                           </div>
-                          <h4 className="font-semibold text-gray-900 dark:text-white line-clamp-1">{noticia.titulo}</h4>
-                          <Link
-                            href={`/noticias/${noticia.slug}`}
-                            className="text-green-600 dark:text-green-400 text-sm hover:underline"
-                          >
-                            Ler mais
-                          </Link>
+                          <h4 className="font-semibold text-gray-900 dark:text-white line-clamp-1">
+                            <Link href={`/noticias/${noticia.slug}`} className="hover:text-green-600 dark:hover:text-green-400">
+                              {noticia.titulo}
+                            </Link>
+                          </h4>
                         </div>
                       </div>
                     </CardContent>
@@ -751,14 +802,10 @@ export default function NoticiasPage() {
                               {format(noticia.data, "dd/MM/yyyy")}
                             </div>
                             <h4 className="font-semibold text-gray-900 dark:text-white line-clamp-1">
-                              {noticia.titulo}
+                              <Link href={`/noticias/${noticia.slug}`} className="hover:text-green-600 dark:hover:text-green-400">
+                                {noticia.titulo}
+                              </Link>
                             </h4>
-                            <Link
-                              href={`/noticias/${noticia.slug}`}
-                              className="text-green-600 dark:text-green-400 text-sm hover:underline"
-                            >
-                              Ler mais
-                            </Link>
                           </div>
                         </div>
                       </CardContent>
@@ -790,14 +837,10 @@ export default function NoticiasPage() {
                               {format(noticia.data, "dd/MM/yyyy")}
                             </div>
                             <h4 className="font-semibold text-gray-900 dark:text-white line-clamp-1">
-                              {noticia.titulo}
+                              <Link href={`/noticias/${noticia.slug}`} className="hover:text-green-600 dark:hover:text-green-400">
+                                {noticia.titulo}
+                              </Link>
                             </h4>
-                            <Link
-                              href={`/noticias/${noticia.slug}`}
-                              className="text-green-600 dark:text-green-400 text-sm hover:underline"
-                            >
-                              Ler mais
-                            </Link>
                           </div>
                         </div>
                       </CardContent>
@@ -829,14 +872,10 @@ export default function NoticiasPage() {
                               {format(noticia.data, "dd/MM/yyyy")}
                             </div>
                             <h4 className="font-semibold text-gray-900 dark:text-white line-clamp-1">
-                              {noticia.titulo}
+                              <Link href={`/noticias/${noticia.slug}`} className="hover:text-green-600 dark:hover:text-green-400">
+                                {noticia.titulo}
+                              </Link>
                             </h4>
-                            <Link
-                              href={`/noticias/${noticia.slug}`}
-                              className="text-green-600 dark:text-green-400 text-sm hover:underline"
-                            >
-                              Ler mais
-                            </Link>
                           </div>
                         </div>
                       </CardContent>

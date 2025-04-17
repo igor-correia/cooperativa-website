@@ -283,21 +283,12 @@ export default function ColaboradoresPage() {
             <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
-                    <Image
-                      src="/placeholder.svg?height=100&width=100"
-                      alt="Foto de perfil"
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="h-12 w-12 rounded-full overflow-hidden mr-4 bg-green-600 flex items-center justify-center">
+                    <span className="text-white text-xl font-semibold">R</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">
-                      Roberto Almeida
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">
-                      Colaborador há 5 anos
-                    </p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">Roberto Almeida</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">Colaborador há 5 anos</p>
                   </div>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 italic">
@@ -311,21 +302,12 @@ export default function ColaboradoresPage() {
             <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
-                    <Image
-                      src="/placeholder.svg?height=100&width=100"
-                      alt="Foto de perfil"
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="h-12 w-12 rounded-full overflow-hidden mr-4 bg-green-600 flex items-center justify-center">
+                    <span className="text-white text-xl font-semibold">F</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">
-                      Fernanda Costa
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">
-                      Colaboradora há 3 anos
-                    </p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">Fernanda Costa</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">Colaboradora há 3 anos</p>
                   </div>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 italic">
@@ -339,21 +321,12 @@ export default function ColaboradoresPage() {
             <Card className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
-                    <Image
-                      src="/placeholder.svg?height=100&width=100"
-                      alt="Foto de perfil"
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="h-12 w-12 rounded-full overflow-hidden mr-4 bg-green-600 flex items-center justify-center">
+                    <span className="text-white text-xl font-semibold">P</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">
-                      Paulo Mendes
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">
-                      Colaborador há 7 anos
-                    </p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">Paulo Mendes</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">Colaborador há 7 anos</p>
                   </div>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 italic">
@@ -377,7 +350,7 @@ export default function ColaboradoresPage() {
             <CardContent className="p-6 text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image
-                  src="/images/colaborador-perfil.png"
+                  src="https://avatars.githubusercontent.com/u/69211250?s=400&u=9385b1fc92aec16f45d1bb755bc628535508288f&v=4"
                   alt="Foto do diretor"
                   fill
                   className="object-cover"
@@ -400,7 +373,7 @@ export default function ColaboradoresPage() {
             <CardContent className="p-6 text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="https://avatars.githubusercontent.com/u/64588244?v=4"
                   alt="Foto do diretor"
                   fill
                   className="object-cover"
@@ -423,7 +396,7 @@ export default function ColaboradoresPage() {
             <CardContent className="p-6 text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="https://avatars.githubusercontent.com/u/110859172?v=4"
                   alt="Foto do diretor"
                   fill
                   className="object-cover"
@@ -466,7 +439,7 @@ export default function ColaboradoresPage() {
             <Button
               size="lg"
               variant="outline"
-              className="bg-white border-green-600 text-green-600 hover:bg-white hover:text-green-600 hover:scale-105 transition-all active:bg-white"
+              className="bg-white text-green-600 hover:bg-gray-100 hover:scale-105 transition-all active:bg-gray-200"
               asChild
             >
               <Link href="/contato">Saiba Mais</Link>

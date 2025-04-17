@@ -458,7 +458,7 @@ const noticias = [
 ]
 
 
-const getNoticiasRelacionadas = (noticia) => {
+const getNoticiasRelacionadas = (noticia: NewsArticle) => {
   return noticias
     .filter(
       (n) =>
@@ -467,14 +467,36 @@ const getNoticiasRelacionadas = (noticia) => {
     .slice(0, 3)
 }
 
+// Define types for our data structures
+interface NewsArticle {
+  id: number;
+  slug: string;
+  titulo: string;
+  resumo: string;
+  conteudo: string;
+  imagem: string;
+  categoria: string;
+  autor: string;
+  data: Date;
+  destaque: boolean;
+  tags: string[];
+}
 
-const getNoticiaPorSlug = (slug) => {
+interface Comment {
+  id: number;
+  autor: string;
+  texto: string;
+  data: Date;
+  likes: number;
+}
+
+const getNoticiaPorSlug = (slug: string): NewsArticle | undefined => {
   return noticias.find((noticia) => noticia.slug === slug)
 }
 
 export default function NoticiaDetalhePage({ params }: { params: { slug: string } }) {
   const [comentario, setComentario] = useState("")
-  const [comentarios, setComentarios] = useState([
+  const [comentarios, setComentarios] = useState<Comment[]>([
     {
       id: 1,
       autor: "Maria Silva",
@@ -508,10 +530,10 @@ export default function NoticiaDetalhePage({ params }: { params: { slug: string 
     )
   }
 
-  const handleSubmitComentario = (e) => {
+  const handleSubmitComentario = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (comentario.trim()) {
-      const novoComentario = {
+      const novoComentario: Comment = {
         id: comentarios.length + 1,
         autor: "Você",
         texto: comentario,
@@ -523,13 +545,36 @@ export default function NoticiaDetalhePage({ params }: { params: { slug: string 
     }
   }
 
-  const handleLike = (id) => {
+  const handleLike = (id: number) => {
     setComentarios(comentarios.map((c) => (c.id === id ? { ...c, likes: c.likes + 1 } : c)))
   }
 
-  return (
-    <div className="pt-24   => (c.id === id ? { ...c, likes: c.likes + 1 } : c)),
-    )
+  const handleShare = (platform: string) => {
+    const url = window.location.href
+    const title = noticia.titulo
+
+    switch (platform) {
+      case 'facebook':
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank')
+        break
+      case 'twitter':
+        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`, '_blank')
+        break
+      case 'whatsapp':
+        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(title + ': ' + url)}`, '_blank')
+        break
+      case 'email':
+        window.open(`mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`, '_blank')
+        break
+    }
+  }
+
+  const formatDate = (date: Date): string => {
+    return date.toLocaleDateString('pt-BR', {
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric',
+    })
   }
 
   return (
@@ -547,11 +592,11 @@ export default function NoticiaDetalhePage({ params }: { params: { slug: string 
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <Badge className="mb-4 bg-green-600 hover:bg-green-700">{noticia.categoria}</Badge>\
+            <Badge className="mb-4 bg-green-600 hover:bg-green-700">{noticia.categoria}</Badge>
             <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">{noticia.titulo}</h1>
-            <diviv className="flex items-center text-gray-600 dark:text-gray-300 mb-6">
+            <div className="flex items-center text-gray-600 dark:text-gray-300 mb-6">
               <CalendarIcon className="h-5 w-5 mr-2 text-green-600 dark:text-green-400" />
-              {format(noticia.data, "dd 'de' MMMM 'de' yyyy", { locale: ptBR })}
+              {formatDate(noticia.data)}
               <span className="mx-2">•</span>
               <span>{noticia.autor}</span>
             </div>
@@ -590,7 +635,7 @@ export default function NoticiaDetalhePage({ params }: { params: { slug: string 
                     </Avatar>
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">{noticia.autor}</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">Publicado em {format(noticia.data, "dd/MM/yyyy")}</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Publicado em {formatDate(noticia.data)}</p>
                     </div>
                   </div>
                   <div className="flex gap-2">
@@ -665,7 +710,7 @@ export default function NoticiaDetalhePage({ params }: { params: { slug: string 
                         <div className="flex items-center justify-between mb-1">
                           <h4 className="font-medium text-gray-900 dark:text-white">{comentario.autor}</h4>
                           <span className="text-sm text-gray-500 dark:text-gray-400">
-                            {format(comentario.data, "dd/MM/yyyy")}
+                            {formatDate(comentario.data)}
                           </span>
                         </div>
                         <p className="text-gray-600 dark:text-gray-300 mb-3">{comentario.texto}</p>
@@ -711,14 +756,10 @@ export default function NoticiaDetalhePage({ params }: { params: { slug: string 
                         </div>
                         <div>
                           <h4 className="font-medium text-gray-900 dark:text-white line-clamp-2 mb-1">
-                            {noticia.titulo}
+                            <Link href={`/noticias/${noticia.slug}`} className="hover:text-green-600 dark:hover:text-green-400">
+                              {noticia.titulo}
+                            </Link>
                           </h4>
-                          <Link
-                            href={`/noticias/${noticia.slug}`}
-                            className="text-green-600 dark:text-green-400 text-sm hover:underline"
-                          >
-                            Ler mais
-                          </Link>
                         </div>
                       </div>
                     </CardContent>

@@ -643,8 +643,11 @@ export default function EventosPage() {
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
               Propor um Evento
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-green-700">
-              Saiba Mais
+            <Button
+              asChild
+              className="bg-white text-green-600 hover:bg-gray-100"
+            >
+              <Link href="/contato">Saiba Mais</Link>
             </Button>
           </div>
         </div>
