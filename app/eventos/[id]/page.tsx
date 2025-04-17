@@ -106,13 +106,13 @@ const eventosProximos = [
   },
   {
     id: 6,
-    titulo: "Feira de Produtos Cooperativos",
-    data: new Date(2025, 4, 25), // 25 de Maio de 2025
+    titulo: "Feira de Produtos --Cooperativos",
+    data: new Date(2025, 4, 25), 
     horario: "10:00 - 20:00",
     local: "Parque de Exposições, São Paulo",
     descricao: "Exposição e venda de produtos desenvolvidos por cooperativas de todo o país, com programação cultural.",
     categoria: "Feira",
-    imagem: "/placeholder.svg?height=300&width=500",
+    imagem: "/images/feira.webp?height=300&width=500",
     vagas: 500,
     inscritos: 320,
     detalhes: {
