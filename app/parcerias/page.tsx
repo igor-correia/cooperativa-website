@@ -630,7 +630,6 @@ export default function ParceriasPage() {
         </div>
       </section>
 
-      {/* Formulário de Contato para Parcerias */}
       <section className="container mx-auto px-4 mb-16">
         <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -771,19 +770,11 @@ export default function ParceriasPage() {
               </form>
             </div>
 
-            <div className="relative h-64 lg:h-auto">
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Parceria"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <div className="relative h-64 lg:h-auto"></div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="bg-gray-50 dark:bg-gray-800 py-16 mb-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
@@ -791,7 +782,6 @@ export default function ParceriasPage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* Pergunta 1 */}
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
