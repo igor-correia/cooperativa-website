@@ -169,7 +169,7 @@ export default function ColaboradoresPage() {
                 </div>
               </div>
 
-              <Button asChild className="mt-8 bg-green-600 hover:bg-green-700 text-white">
+              <Button asChild className="mt-8 bg-green-600 hover:bg-green-500 text-white hover:scale-105 transition-all active:bg-green-400">
                 <Link href="/colaboradores/inscricao">Inscreva-se Agora</Link>
               </Button>
             </div>
@@ -219,7 +219,7 @@ export default function ColaboradoresPage() {
                 </li>
               </ul>
 
-              <Button asChild className="bg-green-600 hover:bg-green-700 text-white">
+              <Button asChild className="bg-green-600 hover:bg-green-500 text-white hover:scale-105 transition-all active:bg-green-400">
                 <Link href="/colaboradores/login">Acessar Área do Colaborador</Link>
               </Button>
             </div>
@@ -330,7 +330,7 @@ export default function ColaboradoresPage() {
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image src="/images/colaborador-perfil.png" alt="Foto do diretor" fill className="object-cover" />
               </div>
-              <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">Carlos Mendes</h3>
+              <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">Junior José</h3>
               <p className="text-green-600 dark:text-green-400 mb-3">Diretor Presidente</p>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Fundador da cooperativa com mais de 20 anos de experiência em gestão cooperativista.
@@ -349,8 +349,8 @@ export default function ColaboradoresPage() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">Ana Paula Souza</h3>
-              <p className="text-green-600 dark:text-green-400 mb-3">Gerente Financeira</p>
+              <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">Igor Correia</h3>
+              <p className="text-green-600 dark:text-green-400 mb-3">Gerente Financeiro</p>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Responsável pela gestão financeira da cooperativa, garantindo a saúde econômica e o crescimento
                 sustentável.
@@ -369,8 +369,8 @@ export default function ColaboradoresPage() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">Pedro Oliveira</h3>
-              <p className="text-green-600 dark:text-green-400 mb-3">Coordenador de Projetos</p>
+              <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">Rayane Bezerra</h3>
+              <p className="text-green-600 dark:text-green-400 mb-3">Coordenadora de Projetos</p>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Lidera a equipe de projetos, buscando soluções inovadoras e oportunidades de desenvolvimento para os
                 colaboradores.
@@ -389,11 +389,20 @@ export default function ColaboradoresPage() {
             cooperação.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-              Torne-se um Colaborador
+            <Button 
+              size="lg" 
+              className="bg-white text-green-600 hover:bg-white hover:text-green-600 hover:scale-105 transition-all active:bg-white"
+              asChild
+            >
+              <Link href="/colaboradores/inscricao">Torne-se um Colaborador</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-green-700">
-              Saiba Mais
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-white border-green-600 text-green-600 hover:bg-white hover:text-green-600 hover:scale-105 transition-all active:bg-white" 
+              asChild
+            >
+              <Link href="/contato">Saiba Mais</Link>
             </Button>
           </div>
         </div>

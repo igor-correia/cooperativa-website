@@ -47,7 +47,7 @@ const noticias = [
         <li>Desenvolvimento de soluções personalizadas para necessidades específicas</li>
       </ul>
       
-      <p>"Esta parceria representa um passo importante em nossa estratégia de inovação e modernização. Estamos comprometidos em oferecer aos nossos membros as melhores ferramentas e oportunidades para que possam prosperar em um mercado cada vez mais competitivo e tecnológico", afirmou Carlos Mendes, Diretor Presidente da cooperativa.</p>
+      <p>"Esta parceria representa um passo importante em nossa estratégia de inovação e modernização. Estamos comprometidos em oferecer aos nossos membros as melhores ferramentas e oportunidades para que possam prosperar em um mercado cada vez mais competitivo e tecnológico", afirmou Junior José, Diretor Presidente da cooperativa.</p>
       
       <h3>Próximos Passos</h3>
       
@@ -284,7 +284,7 @@ const noticias = [
       
       <p>A nova unidade atenderá diretamente mais de 200 cooperados já estabelecidos na região e tem potencial para atrair novos membros, fortalecendo a presença da cooperativa e ampliando seu impacto positivo na economia local.</p>
       
-      <p>"Esta inauguração representa um marco importante em nossa estratégia de expansão e descentralização. Queremos estar cada vez mais próximos dos nossos cooperados, entendendo suas necessidades específicas e oferecendo soluções personalizadas", afirmou Carlos Mendes, Diretor Presidente, durante a cerimônia de inauguração.</p>
+      <p>"Esta inauguração representa um marco importante em nossa estratégia de expansão e descentralização. Queremos estar cada vez mais próximos dos nossos cooperados, entendendo suas necessidades específicas e oferecendo soluções personalizadas", afirmou Junior José, Diretor Presidente, durante a cerimônia de inauguração.</p>
       
       <h3>Horário de Funcionamento</h3>
       

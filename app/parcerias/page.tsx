@@ -785,14 +785,6 @@ export default function ParceriasPage() {
             Acreditamos no poder da colaboração para criar um futuro melhor. Junte-se a nós e descubra como podemos
             crescer juntos através de parcerias estratégicas.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-              Propor Parceria
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-green-700">
-              Conhecer Mais
-            </Button>
-          </div>
         </div>
       </section>
     </div>

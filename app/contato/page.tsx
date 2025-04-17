@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, Bus, Car } from "lucide-react"
 
 export default function ContatoPage() {
   return (
@@ -65,9 +65,14 @@ export default function ContatoPage() {
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white">
-                Enviar Mensagem
-              </Button>
+              <div className="mt-4">
+                <Button 
+                  type="submit" 
+                  className="bg-green-600 hover:bg-green-500 hover:scale-105 transition-all active:bg-green-400 text-white"
+                >
+                  Enviar Mensagem
+                </Button>
+              </div>
             </form>
           </div>
 
@@ -135,6 +140,22 @@ export default function ContatoPage() {
                       Sábado: 9h às 13h
                       <br />
                       Domingo e Feriados: Fechado
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 flex items-start">
+                  <Bus className="h-6 w-6 text-green-600 dark:text-green-400 mr-4 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Como Chegar</h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      <strong>Transporte Público:</strong> Diversas linhas de ônibus passam próximo à nossa sede. A parada mais
+                      próxima fica a 200 metros, em frente à UFCG.
+                      <br /><br />
+                      <strong>Estacionamento:</strong> Dispomos de estacionamento gratuito para cooperados e visitantes nas
+                      dependências da cooperativa.
                     </p>
                   </div>
                 </CardContent>
@@ -211,18 +232,6 @@ export default function ContatoPage() {
             </Card>
           </div>
         </div>
-      </div>
-      <p className="text-gray-600 dark:text-gray-300">
-        <strong>Transporte Público:</strong> Diversas linhas de ônibus passam próximo à nossa sede. A parada mais
-        próxima fica a 200 metros, em frente à UFCG.
-      </p>
-      <p className="text-gray-600 dark:text-gray-300">
-        <strong>Estacionamento:</strong> Dispomos de estacionamento gratuito para cooperados e visitantes nas
-        dependências da cooperativa.
-      </p>
-      <div className="flex items-center text-gray-600 dark:text-gray-300">
-        <MapPin className="h-5 w-5 mr-2 text-green-600 dark:text-green-400" />
-        <span>R. Aprígio Veloso, 882 - Universitário, Campina Grande - PB, 58428-830</span>
       </div>
     </div>
   )
